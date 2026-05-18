@@ -5,10 +5,11 @@ name: My First Pipeline
 on:
   push:
     branches:
-      - main
+      - master
+      - cicd-branch
 
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
 
     steps:
