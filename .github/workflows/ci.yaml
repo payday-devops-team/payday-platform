@@ -12,5 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say Hello
-        run: echo "Pipeline is working!"
+      - name: Get code
+        uses: actions/checkout@v4
+
+
+      - name: Build Docker image
+        run: docker build -t myapp .
