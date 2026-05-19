@@ -1,8 +1,7 @@
-YAML
 
 name: My First Pipeline
 
-'on':
+on:
   push:
     branches:
       - master
