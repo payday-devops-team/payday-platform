@@ -1,0 +1,3 @@
+# helm/payday/values-production.yaml
+image:  { tag: latest }
+api:    { replicas: 3 }
