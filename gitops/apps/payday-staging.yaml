@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/YOUR-ORG/payday-platform
+    repoURL: https://github.com/payday-devops-team/payday-platform.git
     targetRevision: HEAD
     path: helm/payday
     helm:
@@ -16,8 +16,8 @@ spec:
     namespace: staging
   syncPolicy:
     automated: { prune: true, selfHeal: true }
-kubectl apply -f gitops/apps/payday-staging.yaml
-kubectl apply -f gitops/apps/payday-production.yaml
+#kubectl apply -f gitops/apps/payday-staging.yaml
+#kubectl apply -f gitops/apps/payday-production.yaml
  
-argocd app sync payday-staging
-argocd app get  payday-staging
+#argocd app sync payday-staging
+#argocd app get  payday-staging
